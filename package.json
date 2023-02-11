@@ -1,0 +1,33 @@
+{
+	"name": "feed-control",
+	"version": "1.0.0",
+	"description": "A chrome extension to allow the user to control algorithmic content.",
+	"main": "dist/index.js",
+	"type": "module",
+	"scripts": {
+		"build": "tsc",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/CarlMichelsen/feed-control.git"
+	},
+	"keywords": [
+		"chrome",
+		"extension",
+		"algorithm",
+		"control",
+		"content",
+		"data",
+		"time"
+	],
+	"author": "Carl Lilholm Michelsen",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/CarlMichelsen/feed-control/issues"
+	},
+	"homepage": "https://github.com/CarlMichelsen/feed-control#readme",
+	"devDependencies": {
+		"typescript": "^4.9.5"
+	}
+}

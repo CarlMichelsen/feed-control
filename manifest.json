@@ -1,0 +1,26 @@
+{
+	"manifest_version": 3,
+	"name": "Feed control",
+	"version": "1.0",
+	"description": "A chrome extension to allow the user to control algorithmic content.",
+	"icons": {
+		"16": "src/images/icon-16.png",
+		"32": "src/images/icon-32.png",
+		"48": "src/images/icon-48.png",
+		"128": "src/images/icon-128.png"
+	},
+	"content_scripts": [
+		{
+			"js": ["dist/content/netflix/index.js"],
+			"matches": ["https://www.netflix.com/watch/*"]
+		},
+		{
+			"js": ["dist/content/hbo/index.js"],
+			"matches": ["https://play.hbomax.com/player/*"]
+		},
+		{
+			"js": ["dist/content/youtube/index.js"],
+			"matches": ["https://www.youtube.com/", "https://www.youtube.com/*"]
+		}
+	]
+}
